@@ -1,7 +1,5 @@
-
+# local ignore rules
 node_modules
 dist
-.env
-.next
-.cache
 .DS_Store
+.env
