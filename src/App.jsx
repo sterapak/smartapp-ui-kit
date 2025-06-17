@@ -8,6 +8,11 @@ export default function App() {
   return (
     <BrowserRouter>
       <AppShell>
+        {/* ✅ Tailwind verification banner */}
+        <div className="bg-blue-500 text-white p-4 text-center">
+          Tailwind is now working!
+        </div>
+
         <Routes>
           <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/dashboard" element={<DashboardPage />} />
