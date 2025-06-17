@@ -1,27 +1,20 @@
-import React from 'react';
+import React from 'react'
+import { FiClock } from 'react-icons/fi'
+import { useAppStore } from '../store/useAppStore'
 
-export function QueueListPanel({ items, title = 'Queue Details', onClose }) {
+export function QueueListPanel() {
+  const queue = useAppStore((s) => s.queue)
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-40 z-40 flex justify-end">
-      <div className="bg-white w-80 max-w-full h-full p-4 overflow-y-auto shadow-xl">
-        <div className="flex justify-between items-center mb-4">
-          <h2 className="text-lg font-semibold">{title}</h2>
-          <button onClick={onClose} className="text-gray-500 hover:text-gray-700">
-            ×
-          </button>
-        </div>
-        {items.length ? (
-          items.map((job) => (
-            <div key={job.id} className="mb-3 p-2 border rounded">
-              <div className="font-medium">{job.title}</div>
-              <div className="text-sm text-gray-500">{job.company}</div>
-              <div className="text-xs text-gray-400">{job.status}</div>
-            </div>
-          ))
-        ) : (
-          <div className="text-gray-500">No items in queue.</div>
-        )}
-      </div>
+    <div className="bg-white p-4 rounded shadow">
+      <h3 className="text-lg font-semibold mb-2">Jobs in Queue</h3>
+      <ul className="space-y-1">
+        {queue.map((job) => (
+          <li key={job.id} className="flex items-center">
+            <FiClock className="text-orange-500 mr-2" />
+            {job.title} @ {job.company}
+          </li>
+        ))}
+      </ul>
     </div>
-  );
+  )
 }
