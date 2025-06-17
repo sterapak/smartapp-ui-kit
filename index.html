@@ -2,19 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
+    <!-- Vite HMR client -->
+    <script type="module" src="/@vite/client"></script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SmartApp UI Kit</title>
-    <!-- Your font / Tailwind imports go here -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Tailwind directives -->
+    <style type="text/css">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+    </style>
   </head>
   <body class="font-sans">
-    <!-- THIS is required for React to mount -->
-    <div id="root"></div>
-    <!-- THIS boots your Vite/React app -->
+   <!-- THIS is required for React to mount -->
+   <div id="root"></div>
+
+    <!-- Your React entrypoint -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

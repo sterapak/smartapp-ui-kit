@@ -1,26 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
+import { fetchJobs } from '../api/supabaseJobsClient'
 
-export function JobsTable({ jobs }) {
+export default function JobsTable() {
+  const [jobs, setJobs] = useState([])
+
+  useEffect(() => {
+    const loadJobs = async () => {
+      const data = await fetchJobs()
+      setJobs(data)
+    }
+
+    loadJobs()
+  }, [])
+
   return (
-    <div className="overflow-x-auto">
-      <table className="min-w-full bg-white rounded-lg shadow-md overflow-hidden">
-        <thead className="bg-gray-100">
-          <tr>
-            <th className="px-6 py-3 text-left text-sm font-semibold">Job Title</th>
-            <th className="px-6 py-3 text-left text-sm font-semibold">Company</th>
-            <th className="px-6 py-3 text-left text-sm font-semibold">Status</th>
-          </tr>
-        </thead>
-        <tbody>
-          {jobs.map((j) => (
-            <tr key={j.id} className="border-t hover:bg-gray-50">
-              <td className="px-6 py-4">{j.title}</td>
-              <td className="px-6 py-4">{j.company}</td>
-              <td className="px-6 py-4">{j.status}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div>
+      <h3 className="font-bold mb-2">Company Title Status</h3>
+      <ul>
+        {jobs.map((job) => (
+          <li key={job.id}>
+            {job.company} - {job.title} ({job.status})
+          </li>
+        ))}
+      </ul>
     </div>
-  );
+  )
 }
