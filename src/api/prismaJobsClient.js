@@ -9,7 +9,7 @@ export const prismaJobsClient = {
     // Example: return await prisma.job.create({ data: job })
     return job
   },
-  async remove(id) {
+  async remove() {
     // Example: await prisma.job.delete({ where: { id } })
   },
 }
