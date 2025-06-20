@@ -7,6 +7,82 @@
 
 ---
 
+## 🏁 Getting Started
+
+Follow these steps to set up the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url>
+   cd <your-repo-folder>
+   ```
+
+2. **Install all dependencies (including testing tools):**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The app will be available at [http://localhost:5173](http://localhost:5173) by default.
+
+4. **Run unit tests:**
+   ```bash
+   npm test
+   ```
+
+5. **Run E2E tests (with dev server running):**
+   ```bash
+   npm run cypress:open
+   # or
+   npm run cypress:run
+   ```
+
+---
+
+## 🚀 Using This Template to Build Your Own App
+
+To use this project as a starting point for your own application:
+
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repo-url> my-new-app
+   cd my-new-app
+   ```
+
+2. **Remove the existing git history (optional, but recommended):**
+   ```bash
+   rm -rf .git
+   git init
+   git add .
+   git commit -m "Initial commit from SmartApp UI Kit template"
+   ```
+
+3. **Update the project metadata:**
+   - Edit `package.json` to change the `name`, `description`, and other fields.
+   - Update the `README.md` to reflect your new project's purpose.
+
+4. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+5. **Start building your app:**
+   - Run the dev server:
+     ```bash
+     npm run dev
+     ```
+   - Begin customizing components, pages, and styles to fit your needs.
+
+6. **(Optional) Remove or update example tests and E2E flows as you build your own features.**
+
+**Tip:**
+You can keep the testing setup and structure as a foundation for your own app's tests!
+
+---
+
 ## 🧪 Testing
 
 ### Unit & Integration Tests
