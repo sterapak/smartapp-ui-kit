@@ -11,6 +11,7 @@
 
 ## 🚀 Features
 - Modern dashboard layout…
+- ✅ Responsive: Works great on desktop and mobile devices
 
 ## 🛠️ Built With
 
