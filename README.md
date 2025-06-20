@@ -1,9 +1,17 @@
 # SmartApp UI Kit
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **SmartApp UI Kit** is a reusable AI-first dashboard template built with React, Tailwind CSS, and Framer Motion.
 
 ## 🚀 Features
 - Modern dashboard layout…
+
+---
+
+## 🙏 Credits & Inspiration
+
+- This project's design was inspired by [jobhire.ai](https://jobhire.ai).
 
 ---
 
