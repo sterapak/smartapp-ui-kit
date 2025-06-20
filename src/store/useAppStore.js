@@ -2,10 +2,12 @@ import { create } from 'zustand'
 import { fetchJobs } from '../api/supabaseJobsClient'
 
 export const useAppStore = create(set => ({
-  status: 'idle',
+  status: 'active',
   jobs: [],
   queueLength: 0,
   completed: 0,
+
+  setStatus: (status) => set({ status }),
 
   loadJobs: async () => {
     set({ status: 'loading' })
