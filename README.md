@@ -2,10 +2,25 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
+> **ALPHA NOTICE:**  
+> This project is in ALPHA. It is under active development and may change at any time.  
+> Breaking changes, new features, and bug fixes will be added frequently as I build out real apps using this template.  
+> Feedback and contributions are welcome!
+
 **SmartApp UI Kit** is a reusable AI-first dashboard template built with React, Tailwind CSS, and Framer Motion.
 
 ## 🚀 Features
 - Modern dashboard layout…
+
+## 🛠️ Built With
+
+- [VS Code](https://code.visualstudio.com/)
+- [Cursor](https://www.cursor.so/)
+- [ChatGPT (OpenAI)](https://chat.openai.com/)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Cypress](https://www.cypress.io/)
+- [Jest](https://jestjs.io/)
 
 ---
 
