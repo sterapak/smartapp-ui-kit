@@ -158,3 +158,14 @@ npm run dev
 - Some E2E tests are skipped if the corresponding feature is not yet implemented.
 - Unit tests are colocated with source files for easy maintenance.
 - Cypress baseUrl is set to `http://localhost:5173` (update in `cypress.config.js` if needed).
+
+## Contributing
+
+We welcome contributions! To help maintain code quality and reliability, please follow these rules:
+
+- **Tests Required:** All new features and bug fixes must include appropriate unit and/or E2E tests.
+- **Code Coverage:** Code coverage must not decrease. If possible, aim to increase coverage with your changes.
+- **Run Tests:** Run `npm test -- --coverage` and `npx cypress run` before submitting a pull request.
+- **Passing Checks:** All tests must pass locally and in CI before your PR will be reviewed or merged.
+
+If you have questions or need help with testing, feel free to open an issue or ask in your pull request!
